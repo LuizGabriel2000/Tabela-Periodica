@@ -1,18 +1,17 @@
 <template>
 <div class="master">
-
+        <br> <br>
         <header class="header">
-            <span class="legenda">Selecionar Voz: </span>
+            <span style="color: #fff" class="legenda">Selecionar Voz: </span>
             <select id="listaDeVozes"></select>   
         </header>
 
-        <div class="conteudo">
-
+        <v-container class="container">
             <h1 class="titulo">Tabela periotica referte aos elementos</h1>
             
             <div class="d-flex">
                 <div id="bt-html" class="mini-card verde">html</div>
-                <div class="espacador"></div>
+                <v-spacer></v-spacer>
                 <div class="mini-card laranja">col</div>
                 <div class="mini-card laranja">table</div>
             </div>
@@ -20,7 +19,7 @@
             <div class="d-flex">
                 <div class="mini-card azul">head</div>
                 <div class="mini-card amarelo">span</div>
-                <div class="espacador"></div>
+                <v-spacer></v-spacer>
                 <div class="mini-card laranja">div</div>
                 <div class="mini-card verde">fieldset</div>
                 <div class="mini-card verde">form</div>
@@ -34,7 +33,7 @@
             <div class="d-flex">
                 <div class="mini-card azul">title</div>
                 <div class="mini-card amarelo">a</div>
-                <div class="espacador"></div>
+                <v-spacer></v-spacer>
                 <div class="mini-card laranja">pre</div>
                 <div class="mini-card verde">meter</div>
                 <div class="mini-card verde">select</div>
@@ -57,7 +56,6 @@
                 <div class="mini-card laranja">br</div>
                 <div class="mini-card laranja">p</div>
                 <div class="mini-card laranja">blockquote</div>
-                <div class="espacador"></div>
                 <div class="mini-card verde">legend</div>
                 <div class="mini-card verde">optgroup</div>
                 <div class="mini-card azul">address</div>
@@ -130,8 +128,8 @@
                 <div class="mini-card laranja">tfoot</div>
             </div>
     
-            <div class="d-flex mt">            
-                <div class="espacador"></div>
+            <div class="d-flex mt-15">            
+                <v-spacer></v-spacer>
                 <div class="mini-card rosa">img</div>
                 <div class="mini-card rosa">area</div>
                 <div class="mini-card rosa">map</div>
@@ -145,11 +143,9 @@
                 <div class="mini-card rosa">audio</div>
                 <div class="mini-card rosa">video</div>
             </div>
-            
-        </div>
-
+        </v-container>
     </div>
-  
+
 </template>
 
 <script>
@@ -159,6 +155,9 @@ export default {
 </script>
 
 <style>
+.container {
+    max-width: 1250px !important;
+}
 .header {
     background-color: black;
     position: fixed;
@@ -168,24 +167,15 @@ export default {
     
 }
 
-.legenda {
-    color: aliceblue;
-}
-
 .master {
     background-image: url("../assets/imgFundo.jpg");
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0;
 }
 
-.cabecario {
-    font-family: initial;
-    color: rgb(255, 6, 6);
-    text-align: center;
-}
 
 .titulo {
     font-family: initial;
@@ -193,9 +183,6 @@ export default {
     color: seashell;
 }
 
-.conteudo  {
-    padding: 0 30px;
-}
 
 .verde {
     background-color: rgb(25, 153, 25);
@@ -246,29 +233,17 @@ export default {
 }
 
 .mini-card {
-    width: 5%;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 4px;
     font-family: none;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
     cursor: pointer;
     box-shadow: -1px 0px 2px 0px rgb(207 204 198 / 58%);
-}
-
-.d-flex {
-    display: flex;
-}
-
-.espacador {
-    margin-inline-start: auto;
-}
-
-.mt {
-    margin-top: 50px;
 }
 </style>
