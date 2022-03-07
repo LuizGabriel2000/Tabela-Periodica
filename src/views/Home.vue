@@ -1,11 +1,5 @@
 <template>
 <div class="master">
-        <br> <br>
-        <header class="header">
-            <span style="color: #fff" class="legenda">Selecionar Voz: </span>
-            <select id="listaDeVozes"></select>   
-        </header>
-
         <v-container class="container">
             <h1 class="titulo">Tabela periotica referte aos elementos</h1>
             
